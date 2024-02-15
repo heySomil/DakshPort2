@@ -236,4 +236,8 @@
     .box {
         width: 100%; /* 1 box in a row for extra small screens */
     }
+    .card {
+        flex: 0 0 calc(100% - 20px); /* Adjust card width for even smaller screens */
+        max-width: calc(100% - 20px); /* Set maximum width for card */
+    }
 }
