@@ -246,7 +246,7 @@
     }
     .card {
         flex: 0 0 calc(100% - 20px); 
-        max-width: calc(70% - 20px);
+        max-width: calc(80% - 20px);
         max-height: calc(40% - 20px); 
     }
     
