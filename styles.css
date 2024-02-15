@@ -473,6 +473,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5%;
+    
 }
 
 .container {
@@ -567,10 +569,9 @@ input:checked + label .description {
 .as-text {
     padding: 10%;
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
-
+    
 
     h1 {
         text-align: center;
@@ -578,3 +579,4 @@ input:checked + label .description {
         font-size: 2.3rem;
     }
 }
+

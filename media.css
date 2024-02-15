@@ -204,6 +204,7 @@
             text-align: center;
             font-weight: 100;
             font-size: 1.5rem;
+            margin-top: 15%;
         }
     }
 }
@@ -239,5 +240,13 @@
     .card {
         flex: 0 0 calc(100% - 20px); /* Adjust card width for even smaller screens */
         max-width: calc(100% - 20px); /* Set maximum width for card */
+    }
+    .as-text {
+        h1 {
+            text-align: center;
+            font-weight: 100;
+            font-size: 1.5rem;
+            margin-top: 200%;
+        }
     }
 }
