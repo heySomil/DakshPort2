@@ -204,9 +204,10 @@
             text-align: center;
             font-weight: 100;
             font-size: 1.5rem;
-            margin-top: 15%;
+            /* margin-top: 15%; */
         }
     }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -237,16 +238,37 @@
     .box {
         width: 100%; /* 1 box in a row for extra small screens */
     }
-    .card {
-        flex: 0 0 calc(100% - 20px); /* Adjust card width for even smaller screens */
-        max-width: calc(100% - 20px); /* Set maximum width for card */
+    .wrapper{
+        min-height: 100vh;
     }
+    .container{
+        margin-top: -10rem;
+    }
+    .card {
+        flex: 0 0 calc(100% - 20px); 
+        max-width: calc(70% - 20px);
+        max-height: calc(40% - 20px); 
+    }
+    
     .as-text {
+
         h1 {
             text-align: center;
             font-weight: 100;
-            font-size: 1.5rem;
-            margin-top: 200%;
+            font-size: 1rem;
         }
+    }
+    
+    .foot{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        margin-top: 10vh;
+    }
+    .landing h1{
+        font-size: 1.8rem;
+    }
+    .msg{
+        width: 100%;
     }
 }

@@ -33,6 +33,7 @@
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
+    cursor: pointer;
     background-color: var(--bg);
 }
 
@@ -189,7 +190,7 @@
 }
 
 
-.slider{
+.slider {
     display: grid;
     height: 250px;
     margin: auto;
@@ -198,38 +199,43 @@
     width: 90%;
     place-items: center;
     overflow: hidden;
-    
+
 }
-.slide-track{
-    display:flex;
+
+.slide-track {
+    display: flex;
     width: cal(250px*14);
     animation: scroll 40s linear infinite;
-    
+
 }
-@keyframes scroll{
-    0%{
+
+@keyframes scroll {
+    0% {
         transform: translateX(0);
     }
-    100%{
+
+    100% {
         transform: translateX(calc(-250px*7));
     }
 }
-.slide{
+
+.slide {
     height: 200px;
     width: 250px;
     display: flex;
     align-items: center;
     padding: 15px;
-    
 
-    img{
+
+    img {
         width: 100%;
-        
+
     }
 }
+
 .slider::before,
-.slider::after{
-    background: linear-gradient(to right, rgb(0, 0, 0)0%, rgba(255,255,255,0)100%);
+.slider::after {
+    background: linear-gradient(to right, rgb(0, 0, 0)0%, rgba(255, 255, 255, 0)100%);
     content: '';
     height: 100%;
     position: absolute;
@@ -237,11 +243,12 @@
     z-index: 2;
 }
 
-.slider::before{
+.slider::before {
     left: 0;
     top: 0;
 }
-.slider::after{
+
+.slider::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
@@ -265,6 +272,14 @@
     height: 300px;
     border-radius: 50%;
     margin-bottom: 20px;
+}
+
+.profile-image:hover {
+    transition: .3s;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
 }
 
 .name {
@@ -336,7 +351,7 @@
     letter-spacing: 3px;
     background: linear-gradient(135deg, #cf23cf, #eedd44);
     color: hsl(0, 0%, 100%);
-    
+
     cursor: pointer;
 }
 
@@ -454,7 +469,7 @@
             padding: 10px 30px;
             border-image: linear-gradient(to right, #f32170,
                     #ff6b08, #cf23cf, #eedd44) 30;
-            border-image-slice:1;
+            border-image-slice: 1;
 
             border-radius: 50px;
             cursor: pointer;
@@ -473,12 +488,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
-    
+    height: 80vh;
+
 }
 
 .container {
-    height: 350px;
+    height: 60%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -494,19 +509,19 @@
     margin: 0 10px;
     display: flex;
     align-items: flex-end;
-    transition: .6s cubic-bezier(.28,-0.03,0,.99);
-    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
 }
 
-.card > .row {
+.card>.row {
     color: white;
     display: flex;
     flex-wrap: nowrap;
 }
 
-.card > .row > .icon {
+.card>.row>.icon {
     background: linear-gradient(to right, #f32170,
-    #ff6b08);
+            #ff6b08);
     color: white;
     border-radius: 50%;
     width: 50px;
@@ -516,7 +531,7 @@
     margin: 15px;
 }
 
-.card > .row > .description {
+.card>.row>.description {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -542,11 +557,11 @@ input {
     display: none;
 }
 
-input:checked + label {
+input:checked+label {
     width: 600px;
 }
 
-input:checked + label .description {
+input:checked+label .description {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
@@ -554,12 +569,15 @@ input:checked + label .description {
 .card[for="c1"] {
     background-image: url('./images/angular.png');
 }
+
 .card[for="c2"] {
     background-image: url('./images/photoshop.png');
 }
+
 .card[for="c3"] {
     background-image: url('./images/tailwind.png');
 }
+
 .card[for="c4"] {
     background-image: url('./images/React.png');
 }
@@ -567,11 +585,12 @@ input:checked + label .description {
 
 
 .as-text {
-    padding: 10%;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    text-align: center;
+
 
     h1 {
         text-align: center;
@@ -580,3 +599,35 @@ input:checked + label .description {
     }
 }
 
+
+
+
+.foot{
+    
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(0, 0, 0);
+    padding: 5%;
+}
+.foot p, a, strong,i{
+    color: white;
+
+}
+
+.msg{
+    width: 40%;
+}
+.ct{
+    display: flex;
+    flex-direction: column;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+}
+.copy{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

@@ -4,3 +4,4 @@ function menufunc() {
     let navbar = document.querySelector('.navbar-nav');
     navbar.classList.toggle('open');
 }
+  
