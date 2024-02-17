@@ -211,6 +211,17 @@
 }
 
 @media screen and (max-width: 480px) {
+    .for-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience-item{
+        p{
+            background-color: transparent;
+        }
+    }
 
     .navbar {
         padding: 0px 10% 0px 10%;
