@@ -8,6 +8,7 @@
     color: var(--textcolor);
     background-color: var(--bg);
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 :root {
@@ -16,6 +17,17 @@
     --bg: #000000;
 }
 
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
 .navbar {
     display: flex;
     position: fixed;
@@ -33,7 +45,7 @@
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    cursor: pointer;
+    cursor: none;
     background-color: var(--bg);
 }
 
@@ -93,19 +105,35 @@
 
 .scroll div {
     white-space: nowrap;
-    animation: scrolll var(--time) linear infinite;
+    animation: scroll1 var(--time) linear infinite;
     animation-delay: calc(var(--time)*-1);
 
 }
 
+.scroll div:nth-child(2) {
+    animation: scroll2 var(--time) linear infinite;
+    animation-delay: calc(var(--time)/-2);
+}
 
-@keyframes scrolll {
+
+
+@keyframes scroll1 {
     0% {
         transform: translateX(-100%);
     }
 
     100% {
         transform: translateX(100%);
+    }
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
     }
 }
 
@@ -117,7 +145,7 @@
     letter-spacing: 0.2em;
     background: #000000;
     color: #fff;
-    padding: 5px 10px;
+    padding: 1px 10px;
     border-radius: 5px;
     transition: 0.5s;
 }
@@ -191,6 +219,23 @@
     top: 0;
     transform: rotateZ(180deg);
 }
+.background_frame{
+    position: absolute;
+    top: 27px;
+    right: 548px;
+    border-radius: 1000px;
+    width: 420px;
+    height: 418px;
+    display: block
+}
+.faded-image-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%; /* Adjust the fading effect's height */
+    background: linear-gradient(to top, black, transparent);
+}
 
 .home {
     position: relative;
@@ -206,30 +251,34 @@
 }
 
 .profile-image {
+    position: relative;
+    top: 20px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
     margin-bottom: 20px;
+    margin-top: 15px;
 }
 
 .profile-image:hover {
     transition: .3s;
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.001);
 
 }
 
-.name {
-    line-height: 3rem;
-    font-style: italic;
-    font-size: 4rem;
-    display: block;
-    /* margin-top: %; */
-    background: linear-gradient(to right, #f32170,
-            #ff6b08, #cf23cf, #eedd44);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    .name {
+        line-height: 3rem;
+        font-style: italic;
+        font-size: 4rem;
+        display: block;
+        padding-top: 70px;
+        /* margin-top: %; */
+        background: linear-gradient(to right, #f32170,
+                #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
 
     span {
         font-weight: 300;
@@ -238,7 +287,7 @@
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
-}
+    }
 
 
 .social-icons {
@@ -303,7 +352,7 @@
     background: linear-gradient(135deg, #e14848, #ff02d5);
     color: hsl(0, 0%, 100%);
 
-    cursor: pointer;
+    cursor: none;
 }
 
 .bt:active {
@@ -411,7 +460,7 @@
         text-transform: uppercase;
         font-size: 15px;
         transition: all .5s ease;
-        cursor: pointer;
+        cursor: none;
     }
 
     button:hover {
@@ -497,7 +546,7 @@
             border-image-slice: 1;
 
             border-radius: 50px;
-            cursor: pointer;
+            cursor: none;
             letter-spacing: 1.5px;
             text-transform: uppercase;
             font-size: 15px;
@@ -528,7 +577,7 @@
     width: 80px;
     border-radius: .75rem;
     background-size: cover;
-    cursor: pointer;
+    cursor: none;
     overflow: hidden;
     border-radius: 2rem;
     margin: 0 10px;
@@ -597,19 +646,19 @@ input:checked+label .description {
 }
 
 .card[for="c1"] {
-    background-image: url('./images/angular.png');
+    background-image: url('./Project/AReX\ -\ Final\ Pitch\ Deck.jpg');
 }
 
 .card[for="c2"] {
-    background-image: url('./images/photoshop.png');
+    background-image: url('./Project/Bash\ House.jpg');
 }
 
 .card[for="c3"] {
-    background-image: url('./images/tailwind.png');
+    background-image: url('./Project/Screenshot_2022-11-29_at_6.48.39_PM.png');
 }
 
 .card[for="c4"] {
-    background-image: url('./images/React.png');
+    background-image: url('./Project/Defi\ Project.png');
 }
 
 
