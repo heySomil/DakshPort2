@@ -198,7 +198,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 50px;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .profile {
@@ -266,8 +266,13 @@
 
 .subhed {
     h1 {
-        margin: 20px;
+        padding-top: 1%;
+        font-weight: 200;
+        span{
+            font-weight: 600;
+        }
     }
+
 }
 
 
@@ -549,6 +554,11 @@
     justify-content: center;
     align-items: center;
     margin: 15px;
+}
+
+.card>.row>.icon:hover{
+    background: linear-gradient(135deg, #e14848, #ff02d5);
+    transition: 100ms;
 }
 
 .card>.row>.description {

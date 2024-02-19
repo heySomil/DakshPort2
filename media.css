@@ -216,6 +216,7 @@
         justify-content: center;
         align-items: center;
     }
+    
 
     .experience-item{
         p{
@@ -230,10 +231,12 @@
         margin-top: 2rem;
 
         .name{
-            font-size: 3rem;
+            padding: 0 3% ;
+            font-size: 2.5rem;
         }
         .subhed h1{
-            font-size: 1.5rem;
+            font-size: 1rem;
+            padding: 0 5% ;
             font-weight: 300;
         }
     }
