@@ -665,41 +665,42 @@ input:checked+label .description {
 }
 
 
-.row1{
+.row1 {
     display: flex;
     padding: 5% 10% 5% 10%;
     gap: 2rem;
     justify-content: space-between;
-    .r-left{
-        h1{
+
+    .r-left {
+        h1 {
             font-weight: 100;
             color: var(--maincolor);
             font-size: 4rem;
         }
     }
-}
-.r-right{
-    img{
-        mix-blend-mode:difference;
-    }
+
+    
 }
 
 
-.row2{
+
+.row2 {
     display: flex;
-    padding: 0% 10% ;
+    padding: 0% 10%;
     gap: 2rem;
     justify-content: space-around;
 }
 
-.row2-1{
+.row2-1 {
     display: flex;
-    .con-row{
+
+    .con-row {
         display: flex;
         flex-direction: column;
-        gap:1rem;
+        gap: 1rem;
         justify-content: center;
-        h4{
+
+        h4 {
             font-size: 0.7rem;
         }
     }
