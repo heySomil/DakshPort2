@@ -69,8 +69,7 @@
     }
 
     .profile-image {
-        width: 250px;
-        height: 250px;
+        width: 300px;
         border-radius: 50%;
         margin-bottom: 20px;
         /* Add animations here */
@@ -199,13 +198,11 @@
         flex: 0 0 calc(50% - 20px); /* Adjust card width for smaller screens */
         max-width: calc(50% - 20px); /* Set maximum width for card */
     }
-    .as-text {
-        h1 {
-            text-align: center;
-            font-weight: 100;
-            font-size: 1.5rem;
-            /* margin-top: 15%; */
-        }
+    
+    .background_frame{
+        top: 30px;
+        right: 200px;
+        width: 355px;
     }
     
 }
@@ -216,7 +213,9 @@
         justify-content: center;
         align-items: center;
     }
-    
+    .circle{
+        display: none;
+    }
 
     .experience-item{
         p{
@@ -264,14 +263,7 @@
         max-height: calc(40% - 20px); 
     }
     
-    .as-text {
-
-        h1 {
-            text-align: center;
-            font-weight: 100;
-            font-size: 1rem;
-        }
-    }
+    
     
     .foot{
         flex-direction: column;
@@ -285,4 +277,5 @@
     .msg{
         width: 100%;
     }
+   
 }
